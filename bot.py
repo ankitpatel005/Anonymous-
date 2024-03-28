@@ -12,12 +12,12 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN")
 bot = Client("my_account", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
                            
 @bot.on_message(filters.private)
-async def msg(client, message):
-    btn = [[InlineKeyboardButton("Search", url=f"https://t.me/flimrobot")],
-          [InlineKeyboardButton("Request", url=f"https://t.me/MovieRequestsGrp")]]
+async def msg(_, message):
+    btn = [[InlineKeyboardButton("Search", url=f"https://t.me/flimrobot"),
+          InlineKeyboardButton("Request", url=f"https://t.me/MovieRequestsGrp")]]
     
     await message.reply_text(
-        f"<b>This bot has been unmaintained for long time. Please refer to @FlimRobot for the latest movies and series.\n\nএই বটটি দীর্ঘদিন ধরে অপরিচলিত রয়েছে। নতুন সিনেমা অ্যান্ড সিরিজ পেতে এই বটটি ভিসিট করুন @FlimRobot\n\nये बॉट काफी समय से बंद है. नई फ़िल्में और सीरीज़ @FlimRobot पाने के लिए इस बॉट पर जाएँ</b>",
+        f"<b>This bot has been unmaintained for long time. Please refer to @FlimRobot for the latest movies and series.\n\nএই বটটি দীর্ঘদিন ধরে অপরিচলিত রয়েছে। নতুন সিনেমা অ্যান্ড সিরিজ পেতে এই বটটি ভিসিট করুন @FlimRobot</b>",
         reply_markup=InlineKeyboardMarkup(btn),
         disable_web_page_preview=True)
     return
