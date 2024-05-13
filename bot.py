@@ -8,16 +8,16 @@ from threading import Thread
 API_ID = os.environ.get("API_ID")
 API_HASH = os.environ.get("API_HASH")
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
+USER_NAME = os.environ.get("USER_NAME")
 
 bot = Client("my_account", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
                            
 @bot.on_message(filters.private)
 async def msg(_, message):
-    btn = [[InlineKeyboardButton("🔍 Search Movies", url=f"https://t.me/flimrobot"),
-          InlineKeyboardButton("👥 Request Group", url=f"https://t.me/MovieRequestsGrp")]]
+    btn = [[InlineKeyboardButton("🔍 Search Movies", url=f"https://t.me/{USER_NAME}")]]
     
     await message.reply_text(
-        f"<b>🏷 This bot has been unmaintained for long time. Please refer to @FlimRobot for the latest movies and series.\n\n🏷 এই বটটি দীর্ঘদিন ধরে অপরিচলিত রয়েছে। নতুন সিনেমা অ্যান্ড সিরিজ পেতে এই বটটি ভিসিট করুন @FlimRobot</b>",
+        f"<b>🏷 This bot has been unmaintained for long time. Please refer to @{USER_NAME} for the latest movies and series.\n\n🏷 এই বটটি দীর্ঘদিন ধরে অপরিচলিত রয়েছে। নতুন সিনেমা অ্যান্ড সিরিজ পেতে এই বটটি ভিসিট করুন @{USER_NAME}</b>",
         reply_markup=InlineKeyboardMarkup(btn),
         disable_web_page_preview=True)
     return
