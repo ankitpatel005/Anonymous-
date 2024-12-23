@@ -17,7 +17,7 @@ async def msg(_, message):
     btn = [[InlineKeyboardButton("🔍 Search Movies", url=f"https://t.me/{USER_NAME}")]]
     
     await message.reply_text(
-        f"<b>🏷 This bot has been unmaintained for long time. Please refer to @{USER_NAME} for the latest movies and series.\n\n🏷 এই বটটি দীর্ঘদিন ধরে অপরিচলিত রয়েছে। নতুন সিনেমা অ্যান্ড সিরিজ পেতে এই বটটি ভিসিট করুন @{USER_NAME}</b>",
+        f"<b>🏷 All movies Added .New movies everyday ⬇️⬇️\n\nhttps://t.me/apzmovie_series\nhttps://t.me/apzmovie_series\n\nPUSHPA 2(MULTI - AUDIO HD) ⬇️\nJoin & type #Pushpa ⬇️\nhttps://t.me/+hWYNt0MArE8zZjh\nKalki (MULTI - AUDIO HD) ⬇️https://t.me/+hWYNt0MArE8zZjhl\nStranger things (MULTI - AUDIO HD) ⬇️\nhttps://t.me/+hWYNt0MArE8zZjhl</b>",
         reply_markup=InlineKeyboardMarkup(btn),
         disable_web_page_preview=True)
     return
