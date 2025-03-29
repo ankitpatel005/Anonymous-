@@ -17,7 +17,7 @@ async def msg(_, message):
     btn = [[InlineKeyboardButton("🔍 Search Movies", url=f"https://t.me/{USER_NAME}")]]
     
     await message.reply_text(
-        f"<b>🏷 All movies Added .New movies everyday ⬇️⬇️\n\nhttps://t.me/+1Voaor6RVl40OTll\nhttps://t.me/+1Voaor6RVl40OTll\n\nCHHAAVA HINDI 2025 (MULTI - AUDIO HD) ⬇️\nJoin & type 👉 CHHAAVA 2025 ⬇️\nhttps://t.me/+1Voaor6RVl40OTll\nhttps://t.me/+1Voaor6RVl40OTll\n\nCaptain America: Brave New World(MULTI - AUDIO HD) ⬇️https://t.me/+1Voaor6RVl40OTll</b>",
+        f"<b>🏷 All movies Added .New movies everyday ⬇️⬇️\n\nhttps://t.me/+1Voaor6RVl40OTll\nhttps://t.me/+1Voaor6RVl40OTll\n\nSIKHANDAR HINDI 2025 (MULTI - AUDIO HD) ⬇️\nJoin & type 👉 SIKANDAR 2025 ⬇️\nhttps://t.me/+1Voaor6RVl40OTll\nhttps://t.me/+1Voaor6RVl40OTll\n\nChhava(MULTI - AUDIO HD) ⬇️https://t.me/+1Voaor6RVl40OTll</b>",
         reply_markup=InlineKeyboardMarkup(btn),
         disable_web_page_preview=True)
     return
